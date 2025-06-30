@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const port = PORT;
-const hostname = DB_HOST;
+// const hostname = DB_HOST;
 
 app.use(express.json());
 app.use(cors());
@@ -16,6 +16,6 @@ v1.use('/tareas', require('./routes/v1/tareas'))
 
 app.use('/v1', v1);
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
     console.log(`Servidor iniciado en el puerto: ${port}`);
 });
