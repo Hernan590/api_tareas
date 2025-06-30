@@ -1,4 +1,4 @@
-const { PORT, DB_HOST } = require('./config/config.js');
+const { PORT } = require('./config/config.js');
 const express = require('express');
 const cors = require('cors');
 
