@@ -4,7 +4,6 @@ const cors = require('cors');
 
 const app = express();
 const port = PORT;
-// const hostname = DB_HOST;
 
 app.use(express.json());
 app.use(cors());
