@@ -17,7 +17,7 @@ v1.use('/tareas', require('./routes/v1/tareas'))
 app.use('/v1', v1);
 
 keepActiveBd();
-setInterval(keepActiveBd, 2 * 60 * 60 * 1000);
+setInterval(keepActiveBd, 60 * 60 * 1000);
 
 app.get('/ping', (req, res) => {
   res.send('pong');
