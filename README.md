@@ -27,7 +27,7 @@ Este repositorio contiene el backend desarrollado en **Node.js** para gestionar 
 
 ```bash
 git clone https://github.com/Hernan590/api_tareas.git
-cd repositorio-backend
+cd repositorio_backend
 npm install
 npm start
 
