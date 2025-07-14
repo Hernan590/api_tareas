@@ -1,4 +1,4 @@
-const { connection, connect } = require('../config/connection');
+const connection = require('../config/connection'); 
 
 function keepActiveBd() {
   connection.query('SELECT 1', (err) => {
