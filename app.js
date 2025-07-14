@@ -1,7 +1,7 @@
 const { PORT } = require('./config/config.js');
 const express = require('express');
 const cors = require('cors');
-// const keepActiveBd = require('./services/dbPing.js')
+const keepActiveBd = require('./services/dbPing.js')
 
 const app = express();
 const port = PORT;
@@ -16,8 +16,8 @@ v1.use('/tareas', require('./routes/v1/tareas'))
 
 app.use('/v1', v1);
 
-// keepActiveBd();
-// setInterval(keepActiveBd, 60 * 60 * 1000);
+keepActiveBd();
+setInterval(keepActiveBd, 60 * 60 * 1000);
 
 app.get('/ping', (req, res) => {
   res.send('pong');

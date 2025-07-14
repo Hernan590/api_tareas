@@ -12,6 +12,7 @@ loginModel.validarUsuario = function(email, password) {
       [email],
       async (err, results) => {
         if (err) return reject(new Error('Error en la base de datos'));
+        console.error('[MODEL] Error en la base de datos:', err);
 
         const usuario = results[0];
         if (!usuario) return reject(new Error('Usuario no encontrado'));
